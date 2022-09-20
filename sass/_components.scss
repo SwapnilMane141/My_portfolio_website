@@ -418,8 +418,8 @@
     }
 
     &--img {
-      height: 30rem;
-      width: auto;
+      height: auto;
+      width: 50%;
       box-shadow: 1.5rem 2rem 6rem rgba(0, 0, 0, 0.2);
       border-radius: 1rem;
 
@@ -435,7 +435,7 @@
 
   &__portfolio-link {
     display: inline-block;
-    width: 100%;
+    // width: 100%;
     margin: 0 50%;
 
     &--upwork {
