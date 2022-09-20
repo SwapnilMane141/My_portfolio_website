@@ -1,0 +1,71 @@
+// Color Variables
+
+$color-primary-1: #0b254b;
+$color-primary-2: #0a192f;
+$color-primary-3: #051327;
+
+$color-secondary-1: #fcda68;
+$color-secondary-2: #ffd64d;
+$color-secondary-3: #e7bf3a;
+
+$color-ascent-1: #53dc99;
+$color-ascent-2: #43b97f;
+$color-ascent-3: #28b46f;
+
+$color-grey-100: #ece8e7;
+$color-grey-300: #d3d8e1;
+$color-grey-500: #9fadc5;
+$color-grey-700: #4f6384;
+$color-grey-800: #142747;
+$color-grey-900: #07152c;
+
+$color-white: #fff;
+
+// Media Queries
+
+$bp-desktop-big: 112.5em; // 1800px
+$bp-4k: 87.5em; //1400 px
+
+$bp-1200: 75em; //1200 px
+$bp-1100: 68.75em; //1100 px
+$bp-900: 56.25em; // 900 px
+$bp-800: 56.25em; // 900 px
+$bp-700: 43.75em; // 700 px
+$bp-600: 37.5em; // 700 px
+$bp-500: 31.25em; // 500 px
+$bp-400: 25em; // 400 px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: $bp-1200) {
+    font-size: 56.25%; //1rem = 9px , 9/16
+  }
+
+  // @media only screen and (max-width: $bp-900) {
+  //   font-size: 50%; //1rem = 8px , 8px/16px
+  // }
+
+  @media only screen and (min-width: $bp-desktop-big) {
+    font-size: 75%; //1rem =12px , 12/16
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Crimson Pro", sans-serif;
+  background-color: $color-primary-2;
+  color: $color-grey-500;
+  overflow-x: hidden;
+}

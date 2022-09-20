@@ -1,0 +1,128 @@
+.menu-button {
+  @media only screen and (min-width: $bp-600) {
+    visibility: hidden;
+    width: 0;
+    background: linear-gradient(-135deg, #c850c0, #4158d8);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-wrapper-img {
+    @media only screen and (max-width: $bp-600) {
+      position: fixed;
+      top: 3.5rem;
+      right: 3.2rem;
+      height: 2rem;
+      z-index: 2;
+      text-align: center;
+      line-height: 5rem;
+      width: 5rem;
+      width: auto;
+      cursor: pointer;
+      // color: $color-white;
+    }
+  }
+}
+
+#active {
+  display: none;
+
+  &:checked ~ .navigation {
+    clip-path: circle(75%);
+  }
+
+  &:checked ~ .menu-button .nav-wrapper-img {
+    color: #4158d8;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $color-ascent-2;
+  transition: all 0.3s ease-in-out;
+  margin-top: -2rem;
+
+  position: relative;
+
+  @media only screen and (max-width: $bp-600) {
+    clip-path: circle(2.5rem at calc(100% - 4.5rem) 4.5rem);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: $color-primary-1;
+    top: 0;
+    left: 0;
+    margin: 0 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-logo {
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+
+    @media only screen and (max-width: $bp-600) {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      z-index: 2;
+    }
+    &__img {
+      height: 4rem;
+      width: auto;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+
+    @media only screen and (max-width: $bp-600) {
+      flex-direction: column;
+    }
+
+    // @media only screen and (max-width: $bp-600) {
+    //   flex-direction: column;
+    // }
+  }
+
+  &__item {
+    list-style: none;
+    // margin: 0 2rem;
+
+    @media only screen and (max-width: $bp-600) {
+      margin: 2rem 0;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-grey-300;
+    transition: all 0.2s;
+    // font-size: 1.8rem;
+    // width: 1rem;
+    padding: 0.5rem 5rem;
+
+    &:hover {
+      color: $color-white;
+    }
+
+    &--Resume {
+      color: $color-secondary-3;
+      border: 2px solid $color-secondary-3;
+      padding: 0.8rem 1.3rem;
+      border-radius: 0.1rem;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $color-secondary-1;
+        border: 2px solid $color-secondary-1;
+        background-color: rgba($color-secondary-1, 0.2);
+      }
+    }
+  }
+}

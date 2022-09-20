@@ -1,0 +1,58 @@
+.header {
+}
+
+.section-homepage {
+  height: 70wh;
+}
+
+.section-about {
+  margin-top: 18rem;
+  height: 100wh;
+
+  @media only screen and (max-width: $bp-600) {
+    height: 110vh;
+    margin-top: 15rem;
+  }
+
+  @media only screen and (max-width: $bp-600) {
+    height: 125vh;
+  }
+}
+
+.section-portfolio {
+  height: 400vh;
+  margin: 10rem 3rem;
+
+  @media only screen and (max-width: $bp-1200) {
+    height: 350vh;
+  }
+
+  @media only screen and (max-width: $bp-900) {
+    height: 260vh;
+  }
+
+  @media only screen and (max-width: $bp-600) {
+    height: 215vh;
+  }
+}
+
+.section-experience {
+  height: 100vh;
+  margin: -10rem 3rem 10rem 3rem;
+
+  @media only screen and (max-width: $bp-700) {
+    height: 70vh;
+  }
+
+  @media only screen and (max-width: $bp-500) {
+    margin: -10rem 3rem 0 3rem;
+  }
+}
+
+.section-contact {
+  height: 100vh;
+
+  @media only screen and (max-width: $bp-700) {
+    height: 90vh;
+  }
+}
